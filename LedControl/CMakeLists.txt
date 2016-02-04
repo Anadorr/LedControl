@@ -10,5 +10,5 @@ file(GLOB_RECURSE SOURCE_FILES
         "*.cpp"
         )
 
-add_executable(LedControl ${SOURCE_FILES})
-#add_library(LedControl STATIC SHARED MODULE ${SOURCE_FILES})
+#add_executable(LedControl ${SOURCE_FILES})
+add_library(LedControl STATIC SHARED MODULE ${SOURCE_FILES})

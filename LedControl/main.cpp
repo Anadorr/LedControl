@@ -1,4 +1,4 @@
-#define EXECUTABLE
+//#define EXECUTABLE
 #define DEBUG
 #define EXAMPLE
 

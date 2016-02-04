@@ -1,0 +1,40 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LedControl.Test/LedWrapper.cs">
+    <Files>
+      <File FileName="LedControl.Test/LedWrapper.cs" Line="18" Column="4" />
+      <File FileName="LedControl.Test/RGB.cs" Line="1" Column="1" />
+      <File FileName="LedControl.Test/RGBColors.cs" Line="1" Column="1" />
+      <File FileName="LedControl.Test/packages.config" Line="1" Column="1" />
+      <File FileName="LedControl.Test/ActionParams.cs" Line="1" Column="1" />
+      <File FileName="LedControl.Test/Tests/StrobeTest.cs" Line="1" Column="1" />
+      <File FileName="LedControl.Test/Tests/ColorChangeTest.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State name="__root__">
+          <Node name="LedControl.Test" expanded="True">
+            <Node name="LedControl.Test" expanded="True">
+              <Node name="LedControl" expanded="True">
+                <Node name="Test" expanded="True">
+                  <Node name="ColorChangeTest" expanded="True">
+                    <Node name="ColorChange_Should_BeInOrder" expanded="True">
+                      <Node name="ColorChange_Should_BeInOrder(LedControl.Test.ActionParams)" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
+      <Breakpoint file="/home/anadorr/Dev/ognevitsa/led/LedControl.Test/LedControl.Test/LedWrapper.cs" line="26" column="20" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
