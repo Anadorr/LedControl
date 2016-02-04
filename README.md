@@ -32,26 +32,26 @@ GPL v3, see LICENSE for details.
 
 ## Supported effects: 
 ### COLOR CHANGE
-Evenly change from <colorFrom> to <colorTo>.
+Evenly change from &lt;colorFrom&gt; to &lt;colorTo&gt;.
 
 ### STROBE
-Change from <colorFrom> to <colorTo> and back.
+Change from &lt;colorFrom&gt; to &lt;colorTo&gt; and back.
 
 ### UNEVEN STROBE
-Change from <colorFrom> to <colorTo> in <upPercent> time of <total duration>; wait for <maxBrightnessPercent> of time; change back to initial color
+Change from &lt;colorFrom&gt; to &lt;colorTo&gt; in &lt;upPercent&gt; time of &lt;total duration&gt;; wait for &lt;maxBrightnessPercent&gt; of time; change back to initial color
 
 ### STROBE CYCLE
 Strobe several times
 
 ### STROBE RAINBOW
-Strobe from black to <color> and back to black for all colors in rainbow table.
+Strobe from black to &lt;color&gt; and back to black for all colors in rainbow table.
 
 ### FULL RAINBOW
 Change rainbow colors from one to another without black in between.
 
 ## Using in your sketch
 See exampleSketch.ino. Make sure to comment EXECUTABLE and DEBUG defines - they are used only to test the schedule on PC.  EXAMPLE define provides example BuildActionTable function.
-<b>You will need C++11 to use LedControl. If you use inotool, use 'ino build -f="-std=gnu++11"' command.</b>
+<p><b>You will need C++11 to use LedControl. If you use inotool, use 'ino build -f="-std=gnu++11"' command.</b>
 
 ## Project structure
 * TBD
