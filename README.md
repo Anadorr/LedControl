@@ -2,18 +2,18 @@
 
 ## About
 LedControl creates programmable, non-blocking, fast and low-footprint effects for LED strip control with Arduino. Can be used with Arduino Mini.
-It allows you to schedule a sequence of desired LED effects and then get current color at any point of time, to be output to pins.
-I never learned C++ so the code may seem hacky.
+<br>It allows you to schedule a sequence of desired LED effects and then get current color at any point of time, to be output to pins.
+<br>I never learned C++ so the code may seem hacky. Suggestions/pull requests are welcome!
 
 ### Simplified example:
 <pre><code>
 	uint actionCount = 3;
     lazyActionInitializer ** actionTable = new lazyActionInitializer *[actionCount];
     int i=0; 
-    //                                                                          Action type  Start time      Duration     ColorFrom    ColorTo     Delay afterwards
-    arr[i++]  = new lazyActionInitializer([] ()->BaseLedAction* { return new ColorChangeAction(  0,           1000,       COLOR_BLACK, COLOR_WHITE, 0); });
-    arr[i++]  = new lazyActionInitializer([] ()->BaseLedAction* { return new StrobeAction(1000, 1000, COLOR_RED, COLOR_GREEN, 0); });
-    arr[i++]  = new lazyActionInitializer([] ()->BaseLedAction* { return new StrobeUnevenAction(2000, 1000, COLOR_HBLUE, COLOR_MAGENTA, 0, 0.3f,0); });
+    //   --------_>---------------->---------------->------------------------------>    Action type  Start time      Duration     ColorFrom    ColorTo     Delay afterwards
+    actionTable[i++]  = new lazyActionInitializer([] ()->BaseLedAction* { return new ColorChangeAction(  0,           1000,       COLOR_BLACK, COLOR_WHITE, 0); });
+    actionTable[i++]  = new lazyActionInitializer([] ()->BaseLedAction* { return new StrobeAction(1000, 1000, COLOR_RED, COLOR_GREEN, 0); });
+    actionTable[i++]  = new lazyActionInitializer([] ()->BaseLedAction* { return new StrobeUnevenAction(2000, 1000, COLOR_HBLUE, COLOR_MAGENTA, 0, 0.3f,0); });
 
     ActionWalker walker = ActionWalker(actionTable, actionCount);
 
@@ -51,7 +51,7 @@ Change rainbow colors from one to another without black in between.
 
 ## Using in your sketch
 See exampleSketch.ino. Make sure to comment EXECUTABLE and DEBUG defines - they are used only to test the schedule on PC.  EXAMPLE define provides example BuildActionTable function.
-<p><b>You will need C++11 to use LedControl. If you use inotool, use 'ino build -f="-std=gnu++11"' command.</b>
+<br><b>You will need C++11 to use LedControl. If you use inotool, use 'ino build -f="-std=gnu++11"' command.</b>
 
 ## Project structure
 * TBD
